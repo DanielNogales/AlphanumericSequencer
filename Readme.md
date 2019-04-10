@@ -1,6 +1,6 @@
 # AlphanumericSequencer
 
-Get next alphanumeric value.
+Get the next alphanumeric value. Case sensitive.
 
 Sample #1
 
@@ -8,17 +8,17 @@ Value
   "AA"
   
 Next 5 values
+  "AA"
   "AB"
   "AC"
   "AD"
   "AE"
-  "AF"
 
   
 Sample #2
 
 Value
-  "AA10z"
+  "AA18z"
   
 Next 5 values
   "AA18z"
