@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FluentAssertions;
 
 namespace AlphanumericSequencerCore.Tests
 {
@@ -12,19 +13,31 @@ namespace AlphanumericSequencerCore.Tests
     public class AlphanumericIncrementTests
     {
         [Test()]
-        [TestCase("100")]
-        public void NumericsValuesTest(string value)
+        [TestCase(null, "")]
+        [TestCase("000", "001")]
+        [TestCase("010", "011")]
+        [TestCase("100", "101")]
+        [TestCase("205", "206")]
+        public void NumericsValuesTest(string value, string expectedValue)
         {
+            value = value ?? string.Empty;
+            int leghtValue = value.Length;
             string resultValue = AlphanumericIncrement.Increment(value, AlphanumericIncrement.Mode.Numeric);
-            Assert.AreEqual("101", resultValue);
+            resultValue.Should().Be(expectedValue).And.HaveLength(leghtValue);
         }
 
         [Test()]
-        [TestCase("AA")]
-        public void AlphanumericsValuesTest(string value)
+        [TestCase(null, "")]
+        [TestCase("AA", "AB")]
+        [TestCase("AZ", "BA")]
+        [TestCase("  ", "  ")]
+        [TestCase("ZZ", "AA")]
+        public void AlphanumericsValuesTest(string value, string expectedValue)
         {
+            value = value ?? string.Empty;
+            int leghtValue = value.Length;
             string resultValue = AlphanumericIncrement.Increment(value, AlphanumericIncrement.Mode.Alpha);
-            Assert.AreEqual("AB", resultValue);
+            resultValue.Should().Be(expectedValue).And.HaveLength(leghtValue);
         }
     }
 }

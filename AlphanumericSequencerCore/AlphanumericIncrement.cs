@@ -17,6 +17,7 @@ namespace AlphanumericSequencerCore
 
         public static string Increment(string text, Mode mode)
         {
+            text = text ?? string.Empty;
             var textArr = text.ToCharArray();
 
             // Add legal characters
