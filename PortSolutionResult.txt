@@ -1,0 +1,89 @@
+==========
+References
+==========
+AlphanumericSequencerForm
+AlphanumericSequencerForm.Properties
+System
+System.Collections.Generic
+System.Configuration
+System.Data
+System.Linq
+System.Threading.Tasks
+System.Windows
+AlphanumericSequencerCore
+System.Text
+System.Windows.Controls
+System.Windows.Data
+System.Windows.Documents
+System.Windows.Input
+System.Windows.Media
+System.Windows.Media.Imaging
+System.Windows.Navigation
+System.Windows.Shapes
+System.Reflection
+System.Resources
+System.Runtime.CompilerServices
+System.Runtime.InteropServices
+System.Diagnostics
+System.Windows.Automation
+System.Windows.Controls.Primitives
+System.Windows.Ink
+System.Windows.Markup
+System.Windows.Media.Animation
+System.Windows.Media.Effects
+System.Windows.Media.Media3D
+System.Windows.Media.TextFormatting
+System.Windows.Shell
+project.all
+
+===============
+DownloadedFiles
+===============
+project.all.json
+system.configuration.json
+
+==============
+ProjectResults
+==============
+----------------------
+Showing results for: C:\Users\nogal\source\repos\AlphanumericSequencer\AlphanumericSequencerForm\AlphanumericSequencerForm.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net5.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+----------------------
+Showing results for: C:\Users\nogal\source\repos\AlphanumericSequencer\AlphanumericSequencerForm\AlphanumericSequencerForm.csproj
+----------------------
+---------------------------
+Target Versions:
+---------------------------
+net5.0
+---------------------------
+Source Versions:
+---------------------------
+net48
+---------------------------
+Upgrade packages:
+---------------------------
+---------------------------
+Action packages:
+---------------------------
+
+
+===========
+BuildErrors
+===========
+
+

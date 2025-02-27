@@ -18,11 +18,16 @@ namespace AlphanumericSequencerCore.Tests
         [TestCase("010", "011")]
         [TestCase("100", "101")]
         [TestCase("205", "206")]
+        [TestCase("199", "200")]
         public void NumericsValuesTest(string value, string expectedValue)
         {
             value = value ?? string.Empty;
             int leghtValue = value.Length;
             string resultValue = AlphanumericIncrement.Increment(value, AlphanumericIncrement.Mode.Numeric);
+
+            //Assert.AreEqual(expectedValue, resultValue);
+            //Assert.AreEqual(resultValue.Length, leghtValue);
+
             resultValue.Should().Be(expectedValue).And.HaveLength(leghtValue);
         }
 
